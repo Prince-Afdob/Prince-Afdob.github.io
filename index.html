@@ -110,8 +110,8 @@
             <img class="navbar-brand " src="src/img/brand_logo.png" width="42px" height="42px" alt="PL" />
           <a class="navbar-brand col-lg-3 me-0 fw-bold" href="index.html">Prince Kumar</a>
           <ul class="navbar-nav col-lg-6 justify-content-lg-center">
-            <li class="nav-item mx-auto">
-              <a class="nav-link active  fw-bold " aria-current="page" href="#">Home</a>
+            <li class="nav-item ">
+              <a class="nav-link active mx-auto fw-bold " aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item mx-auto">
               <a class="nav-link " href="#">Portfolio</a>
@@ -128,6 +128,7 @@
             <li class="nav-item mx-auto">
               <a class="nav-link " href="#">Contact</a>
             </li>
+          </ul>
             <!-- <li class="nav-item">
               <a class="nav-link disabled" aria-disabled="true">Disabled</a>
             </li> -->
@@ -143,6 +144,36 @@
           <!-- <div class="d-lg-flex col-lg-3 justify-content-lg-end">
             <button class="btn btn-primary">Button</button>
           </div> -->
+          <div class="dropdown bd-mode-toggle col-lg-3 justify-content-lg-end d-lg-flex px-5">
+
+            <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (dark)">
+              <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+              <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text" style="">
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                  <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                  Light
+                  <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="dark" aria-pressed="true">
+                  <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                  Dark
+                  <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                </button>
+              </li>
+              <!-- <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                  <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                  Auto
+                  <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                </button>
+              </li> -->
+  
+          </div>
         </div>
       </div>
     </nav>
@@ -166,36 +197,7 @@
       </symbol>
     </svg>
 
-    <div class="dropdown position-fixed top-0 mt-3 end-0 mb-3 me-3 bd-mode-toggle">
-
-      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (dark)">
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text" style="">
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="dark" aria-pressed="true">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <!-- <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li> -->
-      </ul>
-    </div>
+   
 
     <!-- ============================= Cover ================================= -->
 
@@ -219,6 +221,10 @@
         </div>
       </div>
     </div>
+
+    <!-- ============================= Works ======================================== -->
+
+
 
 
     <!-- ============================= Scripts! ================================ -->
