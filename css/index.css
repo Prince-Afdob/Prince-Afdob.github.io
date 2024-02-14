@@ -1,4 +1,13 @@
 body {
-    min-height: 75rem;
-    padding-top: 4.5rem;
+    min-height: 1rem;
+    padding-top: 1rem;
   }
+
+.profile{
+  border-radius: 80%;
+}
+
+.hero{
+  border-radius: 20px;
+}
+
