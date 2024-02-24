@@ -1,3 +1,7 @@
-body{
-    font-size: smaller;
+.know{
+transition: 4ms;
+}
+
+.know:hover{
+    transform: translateX(10px);
 }
