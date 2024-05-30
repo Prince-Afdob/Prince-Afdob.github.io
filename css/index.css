@@ -11,11 +11,7 @@ body {
   border-radius: 20px;
 }
 
-.knowin{
-  transition-delay: 250ms;
-}
-
 .knowin:hover{
-
+  transition: 0.6s;
   transform: translateX(10px);
 }
