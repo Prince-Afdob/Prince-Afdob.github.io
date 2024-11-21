@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="Dark">
 
   <head>
-    <script src="bootstrap/js/color-modes.js"></script>
+    <script src="../bootstrap/js/color-modes.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,12 +11,12 @@
 
     <title>Prince | Portfolio</title>
 
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/hardware.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
 
-    <link rel="icon" type="image/x-icon" href="src/img/icon.ico">
+    <link rel="icon" type="image/x-icon" href="../src/img/icon.ico">
 
     <style>
       .bd-placeholder-img {
@@ -100,12 +100,12 @@
   </head>
   <body>
     <!-- ===================================NAVBAR=========================================== -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded-3 container" aria-label="navbar_background">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded-3 container fixed" aria-label="navbar_background">
       <div class="container-fluid">
 
         <div class="container navbar-brand" style="width: 75%;">
-          <img src="src/img/brand_logo.png" width="42px" height="42px" alt="PL" />
-          <a class="navbar-brand fw-bold" href="index.html">Prince Kumar</a>
+          <img src="../src/img/brand_logo.png" width="42px" height="42px" alt="PL" />
+          <a class="navbar-brand fw-bold" href="../index.html">Prince Kumar</a>
         </div>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
@@ -117,22 +117,22 @@
           <a class="navbar-brand col-lg-3 me-0 fw-bold" href="index.html">Prince Kumar</a> -->
           <ul class="navbar-nav col-lg-6 justify-content-lg-center">
             <li class="nav-item mx-auto">
-              <a class="nav-link active fw-bold " aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
             </li>
             <li class="nav-item mx-auto">
-              <a class="nav-link " href="./components/portfolio.html">Portfolio</a>
-            </li>
-
-            <li class="nav-item mx-auto">
-              <a class="nav-link " href="./components/hardware.html">Hardware</a>
+              <a class="nav-link " href="./portfolio.html">Portfolio</a>
             </li>
 
             <li class="nav-item mx-auto">
-              <a class="nav-link " href="./components/designer.html">Designer</a>
+              <a class="nav-link " href="hardware.html">Hardware</a>
             </li>
 
             <li class="nav-item mx-auto">
-              <a class="nav-link " href="./components/designer.html">Contact</a>
+              <a class="nav-link active fw-bold" href="#">Designer</a>
+            </li>
+
+            <li class="nav-item mx-auto">
+              <a class="nav-link " href="#">Contact</a>
             </li>
           </ul>
             <!-- <li class="nav-item">
@@ -184,6 +184,7 @@
       </div>
     </nav>
 
+
     <!-- ====================================== Theme Changer ======================================= -->
 
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -215,149 +216,104 @@
       </symbol>
     </svg>
 
-   
-
-    <!-- ============================= Switcher ================================= -->
-    <!-- <div class="container w-50 mt-5 switch mx-auto text-center"> -->
-      <!-- <div class="parent container w-50 mx-auto text-center">
-        <div class="box"></div>
-        <div class="box"></div>
-      </div> -->
-
+    <!--========================= 3D Container =============================== -->
       
     <!-- ============================= Greet ================================= -->
 
     <div class="container bg-body-tertiary mt-5 px-3 py-2 hero w-50">
-      <p class="mt-3 text-center">Positive Greeting's, I'm an Engineering Student based in India.</p>
-    </div>
+        <p class="mt-3 text-center">Hello There, Prince is also a Designer.</p>
+      </div>
 
     <!-- ============================= Profile Image Section ========================== -->
-
+<!-- 
     <div class="container col-xxl-8 px-2 py-3 w-50">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6 mx-auto">
-          <img src="src/img/User_Profile.jpeg" class="d-block mx-lg-auto img-fluid profile" alt="Bootstrap Themes" width="120" height="120" loading="lazy">
+          <img src="../src/img/User_Profile.jpeg" class="d-block mx-lg-auto img-fluid profile" alt="Bootstrap Themes" width="120" height="120" loading="lazy">
         </div>
         <div class="col-lg-6">
           <h1 class="h1 fw-bold text-body-emphasis lh-1 mb-1">Prince Kumar</h1>
-          <p>Engineering Enthusiast and Hobbist (Electronics Engineer/ Programmer/ Graphic Designer)</p>
-          <img class="w-100" src="src/img/Under.png" height="4px"/>
+          <p>Engineering Enthusiast and Hobbist (Digital Craftman)</p>
+          <img class="w-100" src="../src/img/Under.png" height="4px"/>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <!-- ============================== About Me ======================================== -->
-   
-    <div class="container w-75">
-      
-      <u><p class="h3 lead fw-bold text-body-emphasis" style="width: 60%;">About Me</p></u>
-      <p class="mx-1">
-        Greetings! <strong>Prince Kumar</strong> is an engineering enthusiast and hobbist who found his romance in
-        different fields of engineering.
-        He is dedicated to crafting innovative solutions and trying his best to push the envelope.
-        Currently pursuinig Bachlor of Technology (B.Tech) with Electronics and Communication as major's from Rajkiya Engineering College Kannauj Affiliated to AKTU. 
-      </p>
-      <center>
-        <!-- <a class="btn btn-lg btn-primary btn-block knowin shadow" href="components/portfolio.html">Know More ></a> -->
-      <!-- Large modal -->
-            <button type="button" class="btn btn-primary knowin shadow" data-toggle="modal" data-target=".bd-example-modal-lg">Know More</button>
+    
+    <!-- ============================= Thought ================================= -->
+    <!-- <div class="container mt-5 mx-auto text-center">
+      <div class="parent container w-50 mx-auto text-center">
+        <div class="box">
+          <p class="mx-2 fw-bold">
+            There are only 10 types of people in the world: Those who understand binary, and those who don't.
+          </p>
+        </div>
+      </div>
+    </div> -->
 
-            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  ...
-                </div>
-              </div>
+    <div class="container mt-5 w-50">
+        <div class="row align-items-center">
+            <div class="col">
+                <h1 class="h1 fw-bold text-body-emphasis lh-1 mb-1">Prince Kumar</h1>
+                <p>Engineering Enthusiast and Hobbist (Digital Craftman)</p>
             </div>
-            
-      </center>
+            <!-- <div class="col">
+                <img class="rounded" height="300vh" src="../src/img/p.png">
+            </div> -->
+        </div>
     </div>
+
+    <!-- ============================= About Me ======================================== -->
+   
 
     <!-- ============================= Works =========================================== -->
     <br>
 
-    <center> 
-      <hr style="width: 74%;">
-    </center>
-
-    <br>
+    <!-- <center> 
+      <hr style="width: 48%;">
+    </center> -->
     
-    <div class="container w-75">
+    <!-- <div class="container w-50 mb-5">
 
-      <u><p class="h3 lead fw-bold text-body-emphasis">Works</p></u>
-      <p class="mx-1">
-        I have worked on various projects and have a good understanding of different fields of engineering. Currently Working on
-        <strong>"RISA-MPD" Reprogrammable Instruction Set Architecture for Microprocessing Devices</strong>.
-        This allows an individual to create their own custom microprocessor and use it for their own purpose.
-      </p>
-      <center><a class="btn btn-lg btn-primary btn-block knowin shadow" type="submit" href="./components/portfolio.html"> Portfolio ></a></center>
-    </div>
-
-       <!-- ============================= BIO =========================================== -->
-       <br>
-
-       <center> 
-         <hr style="width: 74%;">
-       </center>
-   
-       <br>
-       
-       <div class="container-fluid w-75">
-   
-         <u><p class="h3 lead fw-bold">BIO</p></u>
-         <!-- <p class="mx-1">
-          <p class="mx-1">
-            <u><strong class="fw-bold h6">(2022 - Now): </strong></u> Pursuing B.Tech from Rajkiya Engineering College Kannauj Affiliated to AKTU.<br>
-            <u><strong class="fw-bold h6">(2022)</strong></u> Completed his Intermediate(12th) from CISCE Council from Aligarh.
+      
+      <div class="row mb-3">
+        <div class="col-6 themed-grid-col">
+          <u><p class="h3 lead fw-bold text-body-emphasis">Skills</p></u>
+          <p class="mx-2">
+            <ul>
+              <li>Digital Electronics</li>
+              <li>Microprocessor & Microcontroller</li>
+              <li>PCB Designing</li>
+              <li>Analog Synthesizer & Step Sequencer</li>
+              <li>Hardware Interfacing</li>
+              <li>STM(ARM Cortex) Based µC</li>
+              <li>Embedded System</li>
+            </ul>
           </p>
-         </p> -->
-         </div>
-
-         <div class="px-4">
-          <div class="container-fluid col-xxl-8 px-2" style="width: 70%;">
-            <div class="row">
-              <div class="col-lg-3">
-                <p class="h6 fw-bold ">2022 - Presently: </p>
-              </div>
-  
-              <div class="col-sm-8 col-lg-9 px-2">
-                <p>Pursuing B.Tech (Electronics Engineering) from Rajkiya Engineering College, Kannauj Affiliated to AKTU.</p>
-              </div>
-            </div>
-          </div>
-         </div>
-
-         <div class="px-4">
-          <div class="container col-xxl-8 px-2" style="width: 70%;">
-            <div class="row">
-              <div class="col-lg-3">
-              <p class="h6 fw-bold">2021 - 2022: </p>
-              </div>
-  
-              <div class="col-sm-8 col-lg-9 px-2">
-                <p>Completed his Intermediate(12th) from CISCE Council from Aligarh.</p>
-              </div>
-            </div>
-          </div>
-         </div>
-
-        <div class="px-4 mb-5">
-          <div class="container col-xxl-8 px-2" style="width: 70%;">
-            <div class="row">
-              <div class="col-lg-3">
-                <p class="h6 fw-bold">2019 - 2020: </p>
-              </div>
-  
-              <div class="col-sm-8 col-lg-9 px-2">
-                <p>Completed his High Schooling(10th) from CISCE Council from Aligarh.</p>
-              </div>
-            </div>
-          </div>
         </div>
-
-        <!-- ================================ Footer =================================== -->
-
-        <hr>
+        <div class="col-6 themed-grid-col">
+          <u><p class="h3 lead fw-bold text-body-emphasis">Working Exp. On</p></u>
+          <p class="mx-2">
+            <ul>
+              <li>Intel Quartus Prime</li>
+              <li>Microprocessor & Microcontroller</li>
+              <li>Mentor Graphics(Tanner EDA) for VLSI</li>
+              <li>Proteus</li>
+              <li>Microchip Studio</li>
+              <li>ARM Digital Studio</li>
+              <li>Keil µVision</li>
+            </ul>
+            
+          </p>
+        </div>
+      </div>
+      
+        <!-- <a type="button" class="btn btn-info shadow p-3 mb-5 rounded know" href="tmp8.html"><strong> Know More > </strong></a> -->
+    <!-- </div> 
+    <br> -->
+    
+    <!-- ================================== Footer ==================================== -->
+    <hr>
         <div class="shadow" style="height: max-content; width: max-content;" > 
           </div>
         <hr>
@@ -367,9 +323,9 @@
               <div class="col-6 col-md-2 mb-3">
                 <h5>Sitemap</h5>
                 <ul class="nav flex-column">
-                  <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
-                  <li class="nav-item mb-2"><a href="components/portfolio.html" class="nav-link p-0 text-body-secondary">Portfolio</a></li>
-                  <li class="nav-item mb-2"><a href="components/hardware.html" class="nav-link p-0 text-body-secondary">Hardware</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Portfolio</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Hardware</a></li>
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Software</a></li>
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact</a></li>
                 </ul>
@@ -378,7 +334,7 @@
               <div class="col-6 col-md-2 mb-3">
                 <h5>Recent Works</h5>
                 <ul class="nav flex-column">
-                  <li class="nav-item mb-2"><a href="components/tmp8.html" class="nav-link p-0 text-body-secondary">TMP8</a></li>
+                  <li class="nav-item mb-2"><a href="tmp8.html" class="nav-link p-0 text-body-secondary">TMP8</a></li>
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">TMP32</a></li>
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">RISA-MPD</a></li>
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">TMP Assembler</a></li>
@@ -395,7 +351,7 @@
                 </ul>
               </div>
         
-              <div class="col-md-5 offset-md-1 mb-2">
+              <div class="col-md-5 offset-md-1 mb-3">
                 <!-- <form>
                   <h5>Subscribe to our newsletter</h5>
                   <p>Monthly digest of what's new and exciting from us.</p>
@@ -405,6 +361,7 @@
                     <button class="btn btn-primary" type="button">Subscribe</button>
                   </div>
                 </form> -->
+
                 <div class="info">
                   <div class="address">
                     <svg class="bi me-2 opacity-50 theme-icon" width="1.2em" height="1.2em"><use href="#location"></use></svg>
@@ -428,6 +385,9 @@
                 </div>
               </div>
             </div>
+
+              </div>
+            </div>
         
             <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
               <p><strong>Prince Kumar</strong>, Individual Web Portfolio Profile</p>
@@ -436,20 +396,16 @@
                 <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
                 <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
               </ul> -->
-              <div class="social-links mt-3 text-center">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
             </div>
           </footer>
         </div>
 
+
     <!-- ============================= Scripts! ================================ -->
 
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/hardware.js"></script>
+    <script type="module" src="../js/loader.js"></script>
 
   </body>
   </html>   
